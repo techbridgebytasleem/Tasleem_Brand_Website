@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/app/components/HeroSection';
 import ExperienceSection from '@/app/components/ExperienceSection';
 import SkillsSection from '@/app/components/SkillsSection';
-import CertificationsSection from '@/app/components/CertificationsSection';
+import CredlyCarousel from '@/components/CredlyCarousel';
 import AIJourneySection from '@/app/components/AIJourneySection';
 import ContactSection from '@/app/components/ContactSection';
 
@@ -15,7 +15,7 @@ export default function HomePage() {
       <HeroSection />
       <ExperienceSection />
       <SkillsSection />
-      <CertificationsSection />
+      <CredlyCarousel />
       <AIJourneySection />
       <ContactSection />
       <Footer />
