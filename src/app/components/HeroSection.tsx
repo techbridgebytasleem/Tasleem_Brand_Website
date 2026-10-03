@@ -7,7 +7,7 @@ import Icon from '@/components/ui/AppIcon';
 const stats = [
   { value: '20+', label: 'Years Experience' },
   { value: '3', label: 'Cloud Platforms' },
-  { value: '7+', label: 'Certifications' },
+  { value: '12', label: 'Certifications' },
 ];
 
 const credentials = [
