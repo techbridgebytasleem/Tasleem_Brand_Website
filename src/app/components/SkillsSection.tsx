@@ -16,7 +16,7 @@ const skillGroups: SkillGroup[] = [
     category: 'Cloud Platforms',
     icon: 'CloudIcon',
     color: '#D4AF37',
-    skills: ['Amazon Web Services (AWS)', 'Google Cloud Platform (GCP)', 'Microsoft Azure', 'Multi-Cloud Architecture', 'Cloud Migration Strategy', 'Amazon EC2 & Lambda'],
+    skills: ['Amazon Web Services (AWS)', 'Google Cloud Platform (GCP)', 'Microsoft Azure', 'Multi-Cloud Architecture', 'Cloud Migration Strategy'],
     colSpan: 'lg:col-span-2',
   },
   {
@@ -149,7 +149,7 @@ export default function SkillsSection() {
         {/* Key metrics row */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { value: '20+', label: 'Years in IT', icon: 'CalendarDaysIcon' },
+            { value: '20', label: 'Years in IT', icon: 'CalendarDaysIcon' },
             { value: '3', label: 'Cloud Platforms', icon: 'CloudIcon' },
             { value: '4', label: 'Major Employers', icon: 'BuildingOfficeIcon' },
             { value: '12+', label: 'Certifications', icon: 'AcademicCapIcon' },
