@@ -4,86 +4,119 @@ import React from 'react';
 import Icon from '@/components/ui/AppIcon';
 
 export default function ContactSection() {
+  const [showEmail, setShowEmail] = React.useState(false);
+
   return (
     <section id="contact" className="py-20 lg:py-28 relative">
+      {/* Top border accent */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
+      {/* Background gradient accent */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 60% 40% at 50% 100%, rgba(212,175,55,0.04) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 60% 40% at 50% 100%, rgba(212,175,55,0.04) 0%, transparent 70%)',
         }}
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="mb-16 text-center">
-          <span className="text-gold text-xs font-bold uppercase tracking-widest mb-3 block">Get in Touch</span>
+          <span className="text-gold text-xs font-bold uppercase tracking-widest mb-3 block">
+            Get in Touch
+          </span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Open to<br />
+            Open to
+            <br />
             <span className="text-shimmer">Opportunities</span>
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto text-sm leading-relaxed">
-            Interested in senior Cloud Architect, AI/GenAI, or consulting roles? Let's connect and explore how I can add value to your organization.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Interested in collaborating or learning more about my work? I&apos;m always open to interesting
+            conversations and opportunities.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-          <div className="lg:col-span-2 flex flex-col justify-between gap-8">
-            <div className="space-y-4">
-              <a href="mailto:tasleem.cloudarchitect@gmail.com" className="flex items-center gap-4 p-4 card-surface rounded-xl hover:border-gold/40 transition-all duration-300 group">
-                <div className="w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-                  <Icon name="EnvelopeIcon" size={18} className="text-gold" />
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Email</div>
-                  <div className="text-sm font-medium text-foreground group-hover:text-gold transition-colors">tasleem.cloudarchitect@gmail.com</div>
-                </div>
-              </a>
+        {/* Resume and Contact Card */}
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-secondary/50 to-secondary/20 border border-gold/20 rounded-lg p-8 sm:p-10 hover:border-gold/40 transition-colors duration-300">
+            <div className="flex items-start gap-4 mb-6">
+              <Icon name="FileText" className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-foreground mb-2">Resume & Contact Details</h3>
+                <p className="text-muted-foreground mb-4">
+                  My detailed resume and direct contact information are available upon request. This approach helps
+                  protect my privacy and keep my professional data secure.
+                </p>
+                <button
+                  onClick={() => setShowEmail(!showEmail)}
+                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold/10 hover:bg-gold/20 text-gold font-semibold rounded-lg transition-colors duration-200 border border-gold/30 hover:border-gold/50"
+                >
+                  <Icon name="Mail" className="w-4 h-4" />
+                  {showEmail ? 'Hide Email' : 'Request Resume'}
+                </button>
 
-              <a href="https://www.linkedin.com/in/tasleem-soudagar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 card-surface rounded-xl hover:border-gold/40 transition-all duration-300 group">
-                <div className="w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-                  <Icon name="LinkIcon" size={18} className="text-gold" />
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">LinkedIn</div>
-                  <div className="text-sm font-medium text-foreground group-hover:text-gold transition-colors">tasleem-soudagar</div>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-4 p-4 card-surface rounded-xl">
-                <div className="w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
-                  <Icon name="MapPinIcon" size={18} className="text-gold" />
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Location</div>
-                  <div className="text-sm font-medium text-foreground">Bangalore, India</div>
-                </div>
+                {showEmail && (
+                  <div className="mt-4 p-4 bg-secondary/50 border border-gold/20 rounded-lg animate-in fade-in duration-300">
+                    <p className="text-sm text-muted-foreground mb-2">Reach out at:</p>
+                    
+                      href="mailto:techbridgebytasleem@gmail.com"
+                      className="text-gold hover:text-gold/80 font-semibold break-all"
+                    >
+                      techbridgebytasleem@gmail.com
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="lg:col-span-3">
-            <div className="card-surface rounded-2xl p-10 h-full flex flex-col items-center justify-center text-center gap-6 border-gold/30 gold-glow">
-              <div className="w-16 h-16 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
-                <Icon name="DocumentIcon" size={28} className="text-gold" />
-              </div>
-              <div>
-                <h3 className="font-display text-2xl font-bold text-foreground mb-3">Resume & Full Details</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed max-w-md mb-4">My complete resume, detailed project portfolio, and full contact information are available on request. This protects my privacy and prevents unsolicited outreach.</p>
-                <p className="text-xs text-muted-foreground/70 mb-6">To request my resume or discuss opportunities, please reach out via LinkedIn or email.</p>
-              </div>
-              <div className="flex flex-col gap-3 w-full">
-                <a href="mailto:tasleem.cloudarchitect@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-gold text-primary-foreground rounded-lg font-semibold text-sm hover:bg-accent transition-all duration-200 gold-glow">
-                  <Icon name="EnvelopeIcon" size={16} />
-                  Send Email
-                </a>
-                <a href="https://www.linkedin.com/in/tasleem-soudagar" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 border border-gold/40 text-gold rounded-lg font-semibold text-sm hover:bg-gold/10 transition-all duration-200">
-                  <Icon name="LinkIcon" size={16} />
-                  Connect on LinkedIn
-                </a>
-              </div>
+        {/* Social Links */}
+        <div className="mt-16 flex justify-center gap-8">
+          
+            href="https://www.linkedin.com/in/tasleemansari/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
+            aria-label="LinkedIn"
+          >
+            <div className="w-12 h-12 rounded-lg bg-secondary border border-gold/20 group-hover:border-gold/50 flex items-center justify-center transition-colors duration-200">
+              <Icon name="Linkedin" className="w-6 h-6 text-gold" />
             </div>
-          </div>
+            <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+              LinkedIn
+            </span>
+          </a>
+
+          
+            href="https://github.com/tasleemansari"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
+            aria-label="GitHub"
+          >
+            <div className="w-12 h-12 rounded-lg bg-secondary border border-gold/20 group-hover:border-gold/50 flex items-center justify-center transition-colors duration-200">
+              <Icon name="Github" className="w-6 h-6 text-gold" />
+            </div>
+            <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+              GitHub
+            </span>
+          </a>
+
+          
+            href="https://medium.com/@tasleemansari"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
+            aria-label="Medium"
+          >
+            <div className="w-12 h-12 rounded-lg bg-secondary border border-gold/20 group-hover:border-gold/50 flex items-center justify-center transition-colors duration-200">
+              <Icon name="BookOpen" className="w-6 h-6 text-gold" />
+            </div>
+            <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+              Medium
+            </span>
+          </a>
         </div>
       </div>
     </section>
