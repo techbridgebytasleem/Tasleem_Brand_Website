@@ -19,7 +19,7 @@ export default function CredlyCarousel() {
 
     autoPlayRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % badgeCategories.length);
-    }, 8000); // Change category every 8 seconds
+    }, 3000); // Change category every 8 seconds
 
     return () => {
       if (autoPlayRef.current) clearInterval(autoPlayRef.current);
@@ -152,7 +152,7 @@ export default function CredlyCarousel() {
           {/* Progress Indicator */}
           <div className="mt-8 flex items-center gap-2 text-xs text-muted-foreground">
             <Icon name="InformationCircleIcon" size={14} />
-            <span>Click badges to verify credentials on Credly • Auto-advances every 8 seconds</span>
+            <span>Click badges to verify credentials on Credly • Auto-advances every 3 seconds</span>
           </div>
         </div>
       </div>
