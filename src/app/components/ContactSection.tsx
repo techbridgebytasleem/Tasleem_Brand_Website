@@ -53,7 +53,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">LinkedIn</p>
-                <p className="text-foreground font-semibold group-hover:text-gold transition-colors">linkedin.com/in/tasleemansari</p>
+                <p className="text-foreground font-semibold group-hover:text-gold transition-colors">linkedin.com/in/tasleem-soudagar</p>
               </div>
             </div>
           </a>
