@@ -9,7 +9,7 @@ export interface Badge {
   expiryDate?: string;
   credlyUrl: string;
   imageUrl?: string;
-  category: 'AWS' | 'GCP' | 'Azure' | 'AI' | 'Other';
+  category: 'AWS' | 'GCP' | 'Azure' | 'AI';
   color: string;
   icon: string;
 }
