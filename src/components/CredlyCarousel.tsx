@@ -13,20 +13,27 @@ export default function CredlyCarousel() {
 
   const activeCategory = badgeCategories[activeIndex];
 
-  // Auto-advance carousel
+  // Auto-advance carousel with proper cleanup
   useEffect(() => {
+    // Clear any existing interval before creating a new one
+    if (autoPlayRef.current) {
+      clearInterval(autoPlayRef.current);
+    }
+
     if (!isAutoPlay) return;
 
     autoPlayRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % badgeCategories.length);
-    }, 3000); // Change category every 8 seconds
+    }, 5000); // Changed to 5 seconds for stability
 
     return () => {
-      if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+      if (autoPlayRef.current) {
+        clearInterval(autoPlayRef.current);
+        autoPlayRef.current = null;
+      }
     };
-  }, [isAutoPlay]);
+  }, [isAutoPlay, badgeCategories.length]);
 
-  // Reset autoplay on manual navigation
   const handleManualNav = (index: number) => {
     setActiveIndex(index);
     setIsAutoPlay(true);
@@ -49,7 +56,6 @@ export default function CredlyCarousel() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="mb-16">
           <span className="text-gold text-xs font-bold uppercase tracking-widest mb-3 block">
             Verified Expertise
@@ -69,18 +75,14 @@ export default function CredlyCarousel() {
           </div>
         </div>
 
-        {/* Carousel Container */}
         <div className="relative">
-          {/* Category Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {activeCategory?.badges.map((badge, index) => (
               <CredlyBadge key={badge.id} badge={badge} index={index} />
             ))}
           </div>
 
-          {/* Navigation */}
           <div className="flex items-center justify-between mt-12">
-            {/* Category Info */}
             <div className="flex-1">
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-card border border-border">
                 <div
@@ -99,7 +101,6 @@ export default function CredlyCarousel() {
               </p>
             </div>
 
-            {/* Navigation Buttons */}
             <div className="flex items-center gap-3 ml-6">
               <button
                 onClick={goToPrevious}
@@ -115,7 +116,6 @@ export default function CredlyCarousel() {
                 />
               </button>
 
-              {/* Category Dots */}
               <div className="flex gap-2">
                 {badgeCategories.map((_, index) => (
                   <button
@@ -149,10 +149,9 @@ export default function CredlyCarousel() {
             </div>
           </div>
 
-          {/* Progress Indicator */}
           <div className="mt-8 flex items-center gap-2 text-xs text-muted-foreground">
             <Icon name="InformationCircleIcon" size={14} />
-            <span>Click badges to verify credentials on Credly • Auto-advances every 3 seconds</span>
+            <span>Click badges to verify credentials on Credly • Auto-advances every 5 seconds</span>
           </div>
         </div>
       </div>
