@@ -11,7 +11,7 @@ interface CredlyBadgeProps {
 
 export default function CredlyBadge({ badge, index }: CredlyBadgeProps) {
   return (
-    
+    <a
       href={badge.credlyUrl}
       target="_blank"
       rel="noopener noreferrer"
