@@ -123,7 +123,7 @@ export default function CertificationsSection() {
             <span className="text-shimmer">Gallery</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed">
-            Validated expertise across Google Cloud, AI/GenAI, and enterprise cloud technologies.
+            Validated expertise across AWS, Google Cloud, Azure, AI/GenAI, and enterprise cloud technologies — 12 certifications spanning cloud platforms, AI/ML, and cloud engineering.
           </p>
         </div>
 
