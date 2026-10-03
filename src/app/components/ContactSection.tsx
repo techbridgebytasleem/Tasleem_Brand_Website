@@ -60,14 +60,6 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-
-            <div className="flex items-center gap-3 p-4 card-surface rounded-xl border border-green-500/20">
-              <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse shrink-0" />
-              <div>
-                <div className="text-sm font-semibold text-foreground">Available for Opportunities</div>
-                <div className="text-xs text-muted-foreground mt-0.5">Open · Full-time · Consulting · Remote</div>
-              </div>
-            </div>
           </div>
 
           <div className="lg:col-span-3">
