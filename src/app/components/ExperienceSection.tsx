@@ -12,74 +12,155 @@ interface Role {
   type: string;
   color: string;
   icon: string;
+  responsibility_title?: string;
   responsibilities: string[];
+  achievements?: string[];
 }
 
 const roles: Role[] = [
   {
     company: 'Tata Consultancy Services',
-    title: 'Cloud Consultant',
+    title: 'AWS Solutions Architect – Cloud Consultant',
     dates: 'Jan 2022 – Present',
     duration: '4+ years',
-    location: 'Kuala Lumpur, Malaysia',
+    location: 'Bangalore, India · International: Malaysia',
     type: 'Full-time',
-    color: '#0066CC',
+    color: '#FF9900',
     icon: 'CloudIcon',
+    responsibility_title: 'SKY New Zealand (Primary)',
     responsibilities: [
-      'Working as an AWS Solution Architect delivering enterprise-scale, cloud-native and multi-cloud transformations',
-      'Serving Telecommunications, Media, and Financial Services clients across APAC',
-      'Building migration strategies for customer lines of business to AWS Cloud',
-      'Designing and deploying AWS infrastructure in close collaboration with client stakeholders',
-      'Improving AWS infrastructure performance, availability, and cost optimization',
+      'Define enterprise AWS architecture standards, cloud adoption frameworks, and target-state cloud operating models',
+      'Lead architecture design for application modernization, infrastructure migration, containerization, and platform engineering',
+      'Design highly available, secure, and scalable architectures for broadcast, OTT, streaming, and media processing platforms',
+      'Establish AWS landing zones, multi-account governance models, security guardrails, and identity management frameworks',
+      'Architect and optimize EC2, ECS, EKS, Lambda, API Gateway, RDS, Aurora, DynamoDB, S3, CloudFront, WAF, Route53, CloudWatch, IAM, and AWS Organizations',
+      'Provide architectural leadership for AWS Media Services (MediaLive, MediaPackage, MediaConnect, CloudFront)',
+    ],
+    achievements: [
+      '99.99% uptime SLA across production environments',
+      'Reduced deployment time from days to hours through automation',
+      'Established reusable AWS landing zone templates for enterprise adoption',
+    ],
+  },
+  {
+    company: 'TCS – CelcomDigi NBC Project',
+    title: 'AWS Solutions Architect',
+    dates: 'Concurrent (Jan 2022 – Present)',
+    duration: 'Multi-year engagement',
+    location: 'Kuala Lumpur, Malaysia',
+    type: 'International Assignment',
+    color: '#FF9900',
+    icon: 'GlobeAltIcon',
+    responsibility_title: 'Telecom Infrastructure Transformation',
+    responsibilities: [
+      'Delivered AWS-based unified billing and CRM platform post-merger consolidation serving 10M+ subscribers',
+      'Designed enterprise-grade AWS Landing Zone compliant with telecom MCMC security standards',
+      'Spearheaded CI/CD automation and containerized deployments (EKS, Aurora, OpenSearch)',
+      'Led FinOps initiatives optimizing Reserved Instances and Savings Plans',
+      'Directed cross-functional architecture reviews and governance sessions',
+    ],
+    achievements: [
+      'Achieved 99.99% availability for critical billing systems',
+      '40% improvement in deployment frequency through CI/CD automation',
+      '30% reduction in manual intervention and human errors',
+      '~20% infrastructure cost savings through FinOps optimization',
+      'Successfully consolidated 10M+ customer records post-merger',
+    ],
+  },
+  {
+    company: 'TCS – Astro Project',
+    title: 'AWS Center of Excellence (COE) Lead',
+    dates: 'Concurrent (Jan 2022 – Present)',
+    duration: 'Multi-year engagement',
+    location: 'Bangalore, India',
+    type: 'Full-time',
+    color: '#FF9900',
+    icon: 'SparklesIcon',
+    responsibility_title: 'Media & Entertainment Platform',
+    responsibilities: [
+      'Architected AWS solutions for interactive TV, chatbot, and OTT products',
+      'Introduced Terraform-based Infrastructure-as-Code automation across teams',
+      'Mentored 10+ engineers through AWS certifications and architecture frameworks',
+      'Championed security-by-design with IAM guardrails, encryption, and monitoring (Datadog, CloudWatch)',
+      'Led architecture knowledge-sharing and best practices dissemination',
+    ],
+    achievements: [
+      '35% improvement in content delivery performance',
+      '25% reduction in critical incidents through proactive monitoring',
+      'Reduced provisioning time from days to hours with IaC automation',
+      'Enabled 10+ engineers to achieve AWS Solutions Architect certification',
     ],
   },
   {
     company: 'IBM',
-    title: 'Information Technology Architect (GCP Cloud Solution Architect)',
-    dates: 'Feb 2020 – Jan 2022',
+    title: 'GCP Cloud Solution Architect',
+    dates: 'Feb 2020 – Dec 2021',
     duration: '2 years',
     location: 'Bangalore, India',
     type: 'Full-time',
-    color: '#054ADA',
+    color: '#4285F4',
     icon: 'ServerIcon',
+    responsibility_title: 'Ericsson Data Lake Migration',
     responsibilities: [
-      'Served as GCP Cloud Solution Architect — key role in migrating on-premise customer data to Datalake on Google Cloud',
-      'Led data migration from on-premise to Datalake using BigQuery in GCP',
-      'Created detailed architectural diagrams (HLD and LLD) for cloud solution deployments',
-      'Planned and organized handover sessions for Operations teams for production support',
-      'Led internal information-sharing sessions to disseminate cloud best practices',
+      'Led migration of legacy on-premise systems to cloud-native GCP Data Lake supporting enterprise analytics',
+      'Defined comprehensive HLD/LLD documentation for multi-environment setups (DEV/UAT/PROD)',
+      'Established data governance and security frameworks for telecom datasets',
+      'Optimized BigQuery schemas and storage strategies for analytics workloads',
+      'Conducted GCP capability-building sessions and technical training',
+    ],
+    achievements: [
+      '50% reduction in query performance time through schema optimization',
+      'Successful migration of petabyte-scale data with zero downtime',
+      'Established reusable data governance frameworks and compliance templates',
+      'Upskilled team on BigQuery, GCP IAM, and data security best practices',
     ],
   },
   {
     company: 'Dell EMC',
-    title: 'Senior Lead Software Engineer',
+    title: 'Senior Lead Software Engineer & Project Lead',
     dates: 'Jul 2013 – Feb 2020',
     duration: '6 years 8 months',
-    location: 'Bengaluru, India',
+    location: 'Bangalore, India',
     type: 'Full-time',
     color: '#007DB8',
     icon: 'CircleStackIcon',
+    responsibility_title: 'Goldman Sachs Enterprise Storage',
     responsibilities: [
-      'Storage subject matter expert managing petabyte-scale EMC Symmetrix and NetApp storage systems',
-      'Part of 20-member team handling enterprise-scale storage infrastructure',
-      'Member of Cloud as a Service (CASE) team — building greenfield cloud adoption processes',
-      'Bridging client on-premise infrastructure with public cloud-native solutions (hybrid architecture)',
+      'Storage subject matter expert managing petabyte-scale EMC Symmetrix and NetApp storage infrastructure',
+      'Supervised 12-engineer team overseeing performance tuning, risk management, and technical training',
+      'Transitioned critical workloads to cloud-ready infrastructure and modern storage paradigms',
+      'Automated provisioning and reporting processes using Python and shell scripting',
+      'Member of Cloud as a Service (CASE) team building greenfield cloud adoption processes',
+    ],
+    achievements: [
+      '>99.98% uptime and DR/BCP readiness across production systems',
+      '15% reduction in operational costs through infrastructure optimization',
+      '25% efficiency improvement in provisioning and reporting through automation',
+      'Reduced incident response time by 35% through proactive monitoring',
     ],
   },
   {
     company: 'Mphasis Software Private Limited',
-    title: 'Module Lead',
+    title: 'Module Lead, QA & Operations',
     dates: 'Nov 2006 – Jun 2013',
     duration: '6 years 8 months',
-    location: 'Bengaluru, India',
+    location: 'Bangalore, India',
     type: 'Full-time',
     color: '#8B2FC9',
     icon: 'CpuChipIcon',
+    responsibility_title: 'Charles Schwab & FedEx',
     responsibilities: [
-      'SAN storage provisioning on EMC arrays (DMX3, DMX4, VMAX) and troubleshooting',
-      'Re-engineered investment banking site from Java/J2EE to .NET 2.0 — one of the largest fixed-bid assignments with 100+ third-party integration points',
-      'Full lifecycle business system development with developers, analysts, and testers',
-      'Also served as Quality Assurance Engineer during the investment banking re-engineering project',
+      'Led 6-member QA team implementing risk-based testing strategies for enterprise applications',
+      'Managed SAN storage provisioning on EMC arrays (DMX3, DMX4, VMAX) and infrastructure troubleshooting',
+      'Re-engineered investment banking site from Java/J2EE to .NET 2.0 — largest fixed-bid assignment with 100+ third-party integrations',
+      'Directed full lifecycle development with cross-functional teams (developers, analysts, testers)',
+      'Established testing frameworks and quality assurance processes for financial applications',
+    ],
+    achievements: [
+      '100% on-time delivery across all project milestones',
+      '30% reduction in defect leakage through risk-based testing strategies',
+      '95% test coverage for financial transaction processing systems',
+      'Successfully managed largest fixed-bid project with 100+ integration points',
     ],
   },
 ];
@@ -185,14 +266,37 @@ export default function ExperienceSection() {
                   </div>
 
                   {/* Responsibilities */}
-                  <ul className="space-y-2">
-                    {role.responsibilities.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
-                        <Icon name="ChevronRightIcon" size={14} className="text-gold shrink-0 mt-0.5" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="mb-4">
+                    {role.responsibility_title && (
+                      <h4 className="text-sm font-semibold text-foreground mb-2">{role.responsibility_title}</h4>
+                    )}
+                    <ul className="space-y-2">
+                      {role.responsibilities.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+                          <Icon name="ChevronRightIcon" size={14} className="text-gold shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Achievements */}
+                  {role.achievements && role.achievements.length > 0 && (
+                    <div className="border-t border-border pt-4 mt-4">
+                      <h4 className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <Icon name="StarIcon" size={14} className="text-gold" />
+                        Key Achievements
+                      </h4>
+                      <ul className="space-y-1.5">
+                        {role.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+                            <Icon name="CheckIcon" size={14} className="text-gold shrink-0 mt-0.5" />
+                            {achievement}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
