@@ -103,7 +103,7 @@ export default function ContactSection() {
             {/* Info cards */}
             <div className="space-y-4">
               <a
-                href="mailto:soudagartasleem@gmail.com"
+                href="mailto:tasleem.cloudarchitect@gmail.com"
                 className="flex items-center gap-4 p-4 card-surface rounded-xl hover:border-gold/40 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
@@ -140,7 +140,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground mb-0.5">Location</div>
-                  <div className="text-sm font-medium text-foreground">Kuala Lumpur, Malaysia</div>
+                  <div className="text-sm font-medium text-foreground">Bangalore, India</div>
                 </div>
               </div>
             </div>
