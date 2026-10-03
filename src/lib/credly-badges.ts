@@ -67,7 +67,7 @@ export const badgeCategories: BadgeCategory[] = [
   },
   {
     id: 'gcp',
-    name: 'Google Cloud Platform',
+    name: 'Google Cloud Certifications',
     color: '#4285F4',
     icon: 'CloudIcon',
     description: 'Google Cloud Architecture, Data, and AI Solutions',
@@ -98,7 +98,7 @@ export const badgeCategories: BadgeCategory[] = [
   },
   {
     id: 'Azure',
-    name: 'Microsoft Azure',
+    name: 'Microsoft Azure Certifications',
     color: '#4285F4',
     icon: 'CloudIcon',
     description: 'Azure Cloud Architecture, Data, and AI Solutions',
@@ -117,7 +117,7 @@ export const badgeCategories: BadgeCategory[] = [
   },
   {
     id: 'ai',
-    name: 'AI & Leadership',
+    name: 'AI & Leadership Certifications',
     color: '#D4AF37',
     icon: 'SparklesIcon',
     description: 'Generative AI, Machine Learning, and Leadership Certifications',
@@ -140,7 +140,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/4dd5360b-7691-4cb3-930c-6d6c374e17b4/public_url',
         category: 'AI',
         color: '#F0D060',
-        icon: 'CpuChipIcon',
+        icon: 'SparklesIcon',
       },
       {
         id: 'media-search-ai',
@@ -150,7 +150,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/84c2fa50-3bba-41ca-bec2-4238ec446768/public_url',
         category: 'Other',
         color: '#EA4335',
-        icon: 'FilmIcon',
+        icon: 'SparklesIcon',
       },
       {
         id: 'Build-search-recommendations-applications-ai',
@@ -160,7 +160,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/5217da6d-7dc5-4379-a4e6-176f7530ade0/public_url',
         category: 'Other',
         color: '#EA4335',
-        icon: 'FilmIcon',
+        icon: 'SparklesIcon',
       },
       {
         id: 'Vertex AI',
@@ -170,7 +170,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/b11cf7b7-b040-4705-9408-e820dfb29026/public_url',
         category: 'Other',
         color: '#EA4335',
-        icon: 'FilmIcon',
+        icon: 'SparklesIcon',
       },
       {
         id: 'configure-ai-search',
@@ -180,7 +180,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/3c9251c1-5fa2-40ec-acf7-c67faffe381b/public_url',
         category: 'Other',
         color: '#FBBC05',
-        icon: 'AdjustmentsHorizontalIcon',
+        icon: 'SparklesIcon',
       },
     ],
   },
