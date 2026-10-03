@@ -99,7 +99,7 @@ export const badgeCategories: BadgeCategory[] = [
   {
     id: 'Azure',
     name: 'Microsoft Azure Certifications',
-    color: '#0078D4',
+    color: '#7FBA00',
     icon: 'CloudIcon',
     description: 'Azure Cloud Architecture, Data, and AI Solutions',
     badges: [
@@ -110,7 +110,7 @@ export const badgeCategories: BadgeCategory[] = [
         issueDate: 'Mar 2021',
         credlyUrl: 'https://www.credly.com/badges/60c09e04-17e2-4042-85a1-0b410063ad3a/public_url',
         category: 'Azure',
-        color: '#0078D4',
+        color: '#7FBA00',
         icon: 'CloudIcon',
       },
     ],
