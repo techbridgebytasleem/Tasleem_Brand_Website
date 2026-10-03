@@ -182,7 +182,7 @@ export default function HeroSection() {
         {/* Location bar */}
         <div className="mt-12 flex items-center gap-2 text-xs text-muted-foreground animate-fade-up delay-600">
           <Icon name="MapPinIcon" size={14} className="text-gold" />
-          <span>Kuala Lumpur, Malaysia</span>
+          <span>Bangalore, India</span>
           <span className="mx-2 text-border">·</span>
           <Icon name="BriefcaseIcon" size={14} className="text-gold" />
           <span>Tata Consultancy Services</span>
