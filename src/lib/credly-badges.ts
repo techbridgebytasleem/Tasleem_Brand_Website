@@ -61,7 +61,7 @@ export const badgeCategories: BadgeCategory[] = [
         credlyUrl: 'https://www.credly.com/badges/e0cbb259-36a3-4f7d-a706-8ce88a5a0fe0/public_url',
         category: 'AWS',
         color: '#FF9900',
-        icon: 'CheckBadgeIcon',
+        icon: 'CloudIcon',
       },
     ],
   },
