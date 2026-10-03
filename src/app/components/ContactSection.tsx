@@ -39,7 +39,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Email</p>
-                <p className="text-foreground font-semibold group-hover:text-gold transition-colors break-all">tasleem.cloudarchitect@gmail.com</p>
+                <p className="text-sm text-foreground font-semibold group-hover:text-gold transition-colors break-all">tasleem.cloudarchitect@gmail.com</p>
               </div>
             </div>
           </a>
@@ -53,7 +53,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">LinkedIn</p>
-                <p className="text-foreground font-semibold group-hover:text-gold transition-colors">linkedin.com/in/tasleem-soudagar</p>
+                <p className="text-sm text-foreground font-semibold group-hover:text-gold transition-colors">linkedin.com/in/tasleem-soudagar</p>
               </div>
             </div>
           </a>
