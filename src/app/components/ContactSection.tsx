@@ -44,7 +44,7 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/in/tasleemansari/" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-br from-secondary/50 to-secondary/20 border border-gold/20 hover:border-gold/50 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-gold/10">
+          <a href="https://www.linkedin.com/in/tasleem-soudagar/" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-br from-secondary/50 to-secondary/20 border border-gold/20 hover:border-gold/50 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-gold/10">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors">
                 <svg className="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
