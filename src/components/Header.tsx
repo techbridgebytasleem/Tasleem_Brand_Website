@@ -7,7 +7,7 @@ import Icon from '@/components/ui/AppIcon';
 const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Certifications', href: '#certifications' },
+  { label: 'Certifications', href: '#credly-carousel' },
   { label: 'AI Journey', href: '#ai-journey' },
 ];
 
