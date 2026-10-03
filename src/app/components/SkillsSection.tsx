@@ -152,7 +152,7 @@ export default function SkillsSection() {
             { value: '20+', label: 'Years in IT', icon: 'CalendarDaysIcon' },
             { value: '3', label: 'Cloud Platforms', icon: 'CloudIcon' },
             { value: '4', label: 'Major Employers', icon: 'BuildingOfficeIcon' },
-            { value: '7+', label: 'Certifications', icon: 'AcademicCapIcon' },
+            { value: '12+', label: 'Certifications', icon: 'AcademicCapIcon' },
           ].map((metric, i) => (
             <div
               key={i}
