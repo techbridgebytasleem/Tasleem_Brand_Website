@@ -188,12 +188,6 @@ export default function HeroSection() {
           <span>Tata Consultancy Services</span>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground/50 animate-bounce">
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <Icon name="ChevronDownIcon" size={16} />
-      </div>
     </section>
   );
 }
