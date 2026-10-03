@@ -112,7 +112,7 @@ export default function ContactSection() {
                 <div>
                   <div className="text-xs text-muted-foreground mb-0.5">Email</div>
                   <div className="text-sm font-medium text-foreground group-hover:text-gold transition-colors">
-                    soudagartasleem@gmail.com
+                    tasleem.cloudarchitect@gmail.com
                   </div>
                 </div>
               </a>
