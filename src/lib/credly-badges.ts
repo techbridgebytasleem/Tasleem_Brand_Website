@@ -9,7 +9,7 @@ export interface Badge {
   expiryDate?: string;
   credlyUrl: string;
   imageUrl?: string;
-  category: 'AWS' | 'GCP' | 'AI' | 'Other';
+  category: 'AWS' | 'GCP' | 'Azure' | 'AI' | 'Other';
   color: string;
   icon: string;
 }
@@ -104,7 +104,7 @@ export const badgeCategories: BadgeCategory[] = [
     description: 'Azure Cloud Architecture, Data, and AI Solutions',
     badges: [
       {
-        id: 'Azure Fundamentals',
+        id: 'Azure-Fundamentals',
         name: 'Microsoft Certified: Azure Fundamentals',
         issuer: 'Azure',
         issueDate: 'Mar 2021',
@@ -148,7 +148,7 @@ export const badgeCategories: BadgeCategory[] = [
         issuer: 'Google Cloud Skills Boost',
         issueDate: 'Jan 2026',
         credlyUrl: 'https://www.credly.com/badges/84c2fa50-3bba-41ca-bec2-4238ec446768/public_url',
-        category: 'Other',
+        category: 'AI',
         color: '#D4AF37',
         icon: 'SparklesIcon',
       },
@@ -158,17 +158,17 @@ export const badgeCategories: BadgeCategory[] = [
         issuer: 'Google Cloud Skills Boost',
         issueDate: 'Dec 2025',
         credlyUrl: 'https://www.credly.com/badges/5217da6d-7dc5-4379-a4e6-176f7530ade0/public_url',
-        category: 'Other',
+        category: 'AI',
         color: '#D4AF37',
         icon: 'SparklesIcon',
       },
       {
-        id: 'Vertex AI',
+        id: 'Vertex-AI',
         name: 'Create and maintain Vertex AI Search data stores',
         issuer: 'Google Cloud Skills Boost',
         issueDate: 'Dec 2025',
         credlyUrl: 'https://www.credly.com/badges/b11cf7b7-b040-4705-9408-e820dfb29026/public_url',
-        category: 'Other',
+        category: 'AI',
         color: '#D4AF37',
         icon: 'SparklesIcon',
       },
@@ -178,7 +178,7 @@ export const badgeCategories: BadgeCategory[] = [
         issuer: 'Google Cloud Skills Boost',
         issueDate: 'Dec 2025',
         credlyUrl: 'https://www.credly.com/badges/3c9251c1-5fa2-40ec-acf7-c67faffe381b/public_url',
-        category: 'Other',
+        category: 'AI',
         color: '#D4AF37',
         icon: 'SparklesIcon',
       },
