@@ -4,7 +4,6 @@ import React from 'react';
 import Icon from '@/components/ui/AppIcon';
 
 export default function ContactSection() {
-
   return (
     <section id="contact" className="py-20 lg:py-28 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
@@ -36,7 +35,7 @@ export default function ContactSection() {
           <div className="lg:col-span-2 flex flex-col justify-between gap-8">
             {/* Info cards */}
             <div className="space-y-4">
-              <a
+              
                 href="mailto:tasleem.cloudarchitect@gmail.com"
                 className="flex items-center gap-4 p-4 card-surface rounded-xl hover:border-gold/40 transition-all duration-300 group"
               >
@@ -51,7 +50,7 @@ export default function ContactSection() {
                 </div>
               </a>
 
-              <a
+              
                 href="https://www.linkedin.com/in/tasleem-soudagar"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,42 +88,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-                    {/* Right: Resume & Contact Info Card */}
+          {/* Right: Resume & Contact Info Card */}
           <div className="lg:col-span-3">
             <div className="card-surface rounded-2xl p-10 h-full flex flex-col items-center justify-center text-center gap-6 border-gold/30 gold-glow">
-              <div className="w-16 h-16 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
-                <Icon name="DocumentIcon" size={28} className="text-gold" />
-              </div>
-              <div>
-                <h3 className="font-display text-2xl font-bold text-foreground mb-3">Resume & Full Details</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed max-w-md mb-4">
-                  My complete resume, detailed project portfolio, and full contact information are available on request. This protects my privacy and prevents unsolicited outreach.
-                </p>
-                <p className="text-xs text-muted-foreground/70 mb-6">
-                  To request my resume or discuss opportunities, please reach out via LinkedIn or email.
-                </p>
-              </div>
-              
-              <div className="flex flex-col gap-3 w-full">
-                
-                  href="mailto:tasleem.cloudarchitect@gmail.com"
-                  className="flex items-center justify-center gap-2 px-6 py-3 bg-gold text-primary-foreground rounded-lg font-semibold text-sm hover:bg-accent transition-all duration-200 gold-glow"
-                >
-                  <Icon name="EnvelopeIcon" size={16} />
-                  Send Email
-                </a>
-                
-                  href="https://www.linkedin.com/in/tasleem-soudagar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-6 py-3 border border-gold/40 text-gold rounded-lg font-semibold text-sm hover:bg-gold/10 transition-all duration-200"
-                >
-                  <Icon name="LinkIcon" size={16} />
-                  Connect on LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
-    </section>
-  );
-}
+              <div
