@@ -91,7 +91,7 @@ export default function HeroSection() {
             <p className="text-base sm:text-lg text-muted-foreground font-medium mb-6 animate-fade-up delay-200">
               Multi-Cloud Architect · Cloud Consultant at{' '}
               <span className="text-foreground font-semibold">TCS</span>
-              {' '}·{' '}
+              <br />
               <span className="text-gold">AWS · GCP · Azure</span>
             </p>
 
