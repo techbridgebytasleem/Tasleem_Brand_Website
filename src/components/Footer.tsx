@@ -29,10 +29,10 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="mailto:soudagartasleem@gmail.com"
+            href="mailto:tasleem.cloudarchitect@gmail.com"
             className="hover:text-gold transition-colors"
           >
-            soudagartasleem@gmail.com
+            tasleem.cloudarchitect@gmail.com
           </a>
           <span className="text-muted-foreground/50">·</span>
           <span>© 2026 Tasleem Banu</span>
