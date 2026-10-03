@@ -15,6 +15,10 @@ interface Role {
   responsibility_title?: string;
   responsibilities: string[];
   achievements?: string[];
+  projects?: {
+    name: string;
+    responsibilities: string[];
+  }[];
 }
 
 const roles: Role[] = [
@@ -22,73 +26,57 @@ const roles: Role[] = [
     company: 'Tata Consultancy Services',
     title: 'AWS Solutions Architect – Cloud Consultant',
     dates: 'Jan 2022 – Present',
-    duration: '4+ years',
+    duration: '5 years',
     location: 'Bangalore, India · International: Malaysia',
     type: 'Full-time',
     color: '#FF9900',
     icon: 'CloudIcon',
-    responsibility_title: 'SKY New Zealand (Primary)',
+    responsibility_title: 'Multi-Project Cloud Architecture Leadership',
     responsibilities: [
-      'Define enterprise AWS architecture standards, cloud adoption frameworks, and target-state cloud operating models',
-      'Lead architecture design for application modernization, infrastructure migration, containerization, and platform engineering',
-      'Design highly available, secure, and scalable architectures for broadcast, OTT, streaming, and media processing platforms',
-      'Establish AWS landing zones, multi-account governance models, security guardrails, and identity management frameworks',
-      'Architect and optimize EC2, ECS, EKS, Lambda, API Gateway, RDS, Aurora, DynamoDB, S3, CloudFront, WAF, Route53, CloudWatch, IAM, and AWS Organizations',
-      'Provide architectural leadership for AWS Media Services (MediaLive, MediaPackage, MediaConnect, CloudFront)',
+      'Architecting enterprise-scale AWS solutions across multiple concurrent projects serving Telecommunications, Media, and Financial Services clients',
+      'Defining AWS architecture standards, cloud adoption frameworks, and target-state cloud operating models',
+      'Leading architecture design for application modernization, infrastructure migration, containerization, and platform engineering initiatives',
+      'Establishing AWS landing zones, multi-account governance models, security guardrails, and identity management frameworks',
+      'Architecting and optimizing EC2, ECS, EKS, Lambda, API Gateway, RDS, Aurora, DynamoDB, S3, CloudFront, WAF, Route53, CloudWatch, IAM, and AWS Organizations',
+    ],
+    projects: [
+      {
+        name: 'SKY New Zealand (Primary)',
+        responsibilities: [
+          'Design and architect highly available, secure, and scalable solutions for broadcast, OTT, streaming, and media processing platforms',
+          'Define enterprise AWS architecture standards and cloud adoption frameworks for media infrastructure',
+          'Lead infrastructure migration and platform engineering initiatives for content delivery systems',
+          'Architect AWS Media Services ecosystem (MediaLive, MediaPackage, MediaConnect, CloudFront)',
+        ],
+      },
+      {
+        name: 'CelcomDigi NBC (Malaysia – International Assignment)',
+        responsibilities: [
+          'Delivered AWS-based unified billing and CRM platform post-merger consolidation serving 10M+ subscribers',
+          'Designed enterprise-grade AWS Landing Zone compliant with telecom MCMC security standards',
+          'Spearheaded CI/CD automation and containerized deployments (EKS, Aurora, OpenSearch)',
+          'Led FinOps initiatives optimizing Reserved Instances and Savings Plans across infrastructure',
+        ],
+      },
+      {
+        name: 'Astro (AWS Center of Excellence – COE Lead)',
+        responsibilities: [
+          'Architected AWS solutions for interactive TV, chatbot, and OTT products',
+          'Introduced Terraform-based Infrastructure-as-Code automation reducing provisioning time from days to hours',
+          'Mentored 10+ engineers through AWS certifications and architecture best practices',
+          'Championed security-by-design with IAM guardrails, encryption, and comprehensive monitoring (Datadog, CloudWatch)',
+        ],
+      },
     ],
     achievements: [
       '99.99% uptime SLA across production environments',
-      'Reduced deployment time from days to hours through automation',
-      'Established reusable AWS landing zone templates for enterprise adoption',
-    ],
-  },
-  {
-    company: 'TCS – CelcomDigi NBC Project',
-    title: 'AWS Solutions Architect',
-    dates: 'Concurrent (Jan 2022 – Present)',
-    duration: 'Multi-year engagement',
-    location: 'Kuala Lumpur, Malaysia',
-    type: 'International Assignment',
-    color: '#FF9900',
-    icon: 'GlobeAltIcon',
-    responsibility_title: 'Telecom Infrastructure Transformation',
-    responsibilities: [
-      'Delivered AWS-based unified billing and CRM platform post-merger consolidation serving 10M+ subscribers',
-      'Designed enterprise-grade AWS Landing Zone compliant with telecom MCMC security standards',
-      'Spearheaded CI/CD automation and containerized deployments (EKS, Aurora, OpenSearch)',
-      'Led FinOps initiatives optimizing Reserved Instances and Savings Plans',
-      'Directed cross-functional architecture reviews and governance sessions',
-    ],
-    achievements: [
-      'Achieved 99.99% availability for critical billing systems',
       '40% improvement in deployment frequency through CI/CD automation',
       '30% reduction in manual intervention and human errors',
       '~20% infrastructure cost savings through FinOps optimization',
-      'Successfully consolidated 10M+ customer records post-merger',
-    ],
-  },
-  {
-    company: 'TCS – Astro Project',
-    title: 'AWS Center of Excellence (COE) Lead',
-    dates: 'Concurrent (Jan 2022 – Present)',
-    duration: 'Multi-year engagement',
-    location: 'Bangalore, India',
-    type: 'Full-time',
-    color: '#FF9900',
-    icon: 'SparklesIcon',
-    responsibility_title: 'Media & Entertainment Platform',
-    responsibilities: [
-      'Architected AWS solutions for interactive TV, chatbot, and OTT products',
-      'Introduced Terraform-based Infrastructure-as-Code automation across teams',
-      'Mentored 10+ engineers through AWS certifications and architecture frameworks',
-      'Championed security-by-design with IAM guardrails, encryption, and monitoring (Datadog, CloudWatch)',
-      'Led architecture knowledge-sharing and best practices dissemination',
-    ],
-    achievements: [
       '35% improvement in content delivery performance',
       '25% reduction in critical incidents through proactive monitoring',
-      'Reduced provisioning time from days to hours with IaC automation',
-      'Enabled 10+ engineers to achieve AWS Solutions Architect certification',
+      'Successfully consolidated 10M+ customer records post-merger',
+      'Reduced deployment time from days to hours through automation',
     ],
   },
   {
@@ -279,6 +267,25 @@ export default function ExperienceSection() {
                       ))}
                     </ul>
                   </div>
+
+                  {/* Projects (for TCS) */}
+                  {role.projects && role.projects.length > 0 && (
+                    <div className="mb-4 border-t border-border pt-4">
+                      {role.projects.map((project, pIdx) => (
+                        <div key={pIdx} className={pIdx > 0 ? 'mt-4 pt-4 border-t border-border/50' : ''}>
+                          <h4 className="text-sm font-semibold text-gold mb-2">{project.name}</h4>
+                          <ul className="space-y-2">
+                            {project.responsibilities.map((resp, rIdx) => (
+                              <li key={rIdx} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+                                <Icon name="ChevronRightIcon" size={14} className="text-gold shrink-0 mt-0.5" />
+                                {resp}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Achievements */}
                   {role.achievements && role.achievements.length > 0 && (
