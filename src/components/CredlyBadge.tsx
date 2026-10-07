@@ -18,11 +18,8 @@ export default function CredlyBadge({ badge, index }: CredlyBadgeProps) {
       className="group relative h-full"
     >
       <div
-        className="badge-card card-surface rounded-2xl p-6 h-full flex flex-col cursor-pointer transition-all duration-300 hover:border-gold/50 overflow-hidden"
+        className="badge-card card-surface rounded-2xl p-6 h-full flex flex-col cursor-pointer transition-all duration-300 hover:border-gold/50 overflow-hidden animate-badge-inter"
         style={{
-          opacity: 0,
-          transform: 'scale(0.95)',
-          animation: `badgeInter 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards`,
           animationDelay: `${index * 100}ms`,
         }}
       >
@@ -83,19 +80,6 @@ export default function CredlyBadge({ badge, index }: CredlyBadgeProps) {
           </div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes badgeInter {
-          from {
-            opacity: 0;
-            transform: scale(0.95) translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-          }
-        }
-      `}</style>
     </a>
   );
 }
