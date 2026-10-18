@@ -34,6 +34,12 @@ const milestones = [
     description: 'Pursuing GenAI certifications — bridging 20 years of cloud expertise with AI',
     icon: 'SparklesIcon',
   },
+  {
+    year: '2026',
+    title: 'Production-Grade AI Implementation',
+    description: 'Delivering enterprise-ready generative AI solutions — operationalizing AI at scale on cloud infrastructure',
+    icon: 'RocketLaunchIcon',
+  },
 ];
 
 export default function AIJourneySection() {
@@ -124,7 +130,7 @@ export default function AIJourneySection() {
           {/* Connector line */}
           <div className="hidden lg:block absolute top-8 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
             {milestones.map((milestone, index) => (
               <div
                 key={index}
