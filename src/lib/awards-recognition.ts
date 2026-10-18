@@ -23,7 +23,7 @@ export const awardCategories: AwardCategory[] = [
   {
     id: 'tcs-gems',
     name: 'TCS Internal Awards',
-    color: '#EE1C6B',
+    color: '#0066FF',
     awards: [
       {
         id: 'tcs-star-month-dec-2023',
@@ -33,7 +33,7 @@ export const awardCategories: AwardCategory[] = [
         date: 'December 2023',
         description: 'Awarded for outstanding contribution to the organization. An inspiring role model to colleagues.',
         certificateImage: '/awards/tcs-star-month-dec-2023.png',
-        color: '#EE1C6B',
+        color: '#0066FF',
       },
       {
         id: 'tcs-feedback-enthusiast',
@@ -43,7 +43,7 @@ export const awardCategories: AwardCategory[] = [
         date: 'July 2023',
         description: 'Recognized as an inspiring role model for dedication and commitment to continuous feedback.',
         certificateImage: '/awards/tcs-feedback-enthusiast.png',
-        color: '#EE1C6B',
+        color: '#0066FF',
       },
       {
         id: 'tcs-smiles-award-dec-2022',
@@ -53,7 +53,7 @@ export const awardCategories: AwardCategory[] = [
         date: 'December 2022',
         description: 'Appreciation for outstanding contribution and inspiring role model to colleagues.',
         certificateImage: '/awards/tcs-smiles-award-dec-2022.png',
-        color: '#EE1C6B',
+        color: '#0066FF',
       },
       {
         id: 'tcs-smiles-award-oct-2022',
@@ -63,7 +63,7 @@ export const awardCategories: AwardCategory[] = [
         date: 'October 2022',
         description: 'Recognition for inspiring role model dedication and commitment.',
         certificateImage: '/awards/tcs-smiles-award-oct-2022.png',
-        color: '#EE1C6B',
+        color: '#0066FF',
       },
       {
         id: 'tcs-excellence-performance',
@@ -73,7 +73,7 @@ export const awardCategories: AwardCategory[] = [
         date: '2022',
         description: 'Commended for outstanding contribution across AWS accounts, WABA availability, cost optimization, and infrastructure improvements.',
         certificateImage: '/awards/tcs-excellence-performance.png',
-        color: '#EE1C6B',
+        color: '#0066FF',
       },
     ],
   },
