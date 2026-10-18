@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Icon from '@/components/ui/AppIcon';
 import AwardCard from './AwardCard';
 import AwardModal from './AwardModal';
@@ -25,6 +25,15 @@ export default function AwardsCarousel() {
     setSelectedAward(award);
     setIsModalOpen(true);
   };
+
+  // Auto-scroll every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % awardCategories.length);
+    }, 3000); // 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
