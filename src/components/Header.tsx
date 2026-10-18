@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Certifications', href: '#credly-carousel' },
+  { label: 'Awards and Recognitions', href: '#awards-recognition' },
   { label: 'AI Journey', href: '#ai-journey' },
 ];
 
