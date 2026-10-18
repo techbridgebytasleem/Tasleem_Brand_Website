@@ -7,6 +7,7 @@ import SkillsSection from '@/app/components/SkillsSection';
 import CredlyCarousel from '@/components/CredlyCarousel';
 import AIJourneySection from '@/app/components/AIJourneySection';
 import ContactSection from '@/app/components/ContactSection';
+import AwardsCarousel from '@/app/components/AwardsCarousel';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <ExperienceSection />
       <SkillsSection />
       <CredlyCarousel />
+      <AwardsCarousel />
       <AIJourneySection />
       <ContactSection />
       <Footer />
