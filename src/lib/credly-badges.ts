@@ -32,6 +32,17 @@ export const badgeCategories: BadgeCategory[] = [
     description: 'Amazon Web Services Cloud Architecture & AI Expertise',
     badges: [
       {
+        id: 'aws-ai-business-strategist',
+        name: 'AWS AI Business Strategist',
+        issuer: 'Amazon Web Services',
+        issueDate: 'Oct 2026',
+        expiryDate: 'Oct 2029',
+        credlyUrl: 'https://www.credly.com/badges/65a55e3c-c018-4300-b3f7-26da231093d5/public_url',
+        category: 'AWS',
+        color: '#FF9900',
+        icon: 'CloudIcon',
+      },
+      {
         id: 'aws-solutions-architect',
         name: 'AWS Certified Solutions Architect – Associate',
         issuer: 'Amazon Web Services',
