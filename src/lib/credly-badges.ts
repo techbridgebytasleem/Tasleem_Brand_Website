@@ -43,6 +43,17 @@ export const badgeCategories: BadgeCategory[] = [
         icon: 'CloudIcon',
       },
       {
+        id: 'aws-ai-practitioner',
+        name: 'AWS Certified AI Practitioner',
+        issuer: 'Amazon Web Services',
+        issueDate: 'Nov 2026',
+        expiryDate: 'Nov 2029',
+        credlyUrl: 'https://www.credly.com/badges/b4bb28a4-2a94-48ce-bd66-e8dbd73a1db9/public_url',
+        category: 'AWS',
+        color: '#FF9900',
+        icon: 'CloudIcon',
+      },
+      {
         id: 'aws-solutions-architect',
         name: 'AWS Certified Solutions Architect – Associate',
         issuer: 'Amazon Web Services',
